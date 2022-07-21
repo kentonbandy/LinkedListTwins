@@ -33,7 +33,7 @@ If you have your code working and want more test cases, let me know.
 
 ## Simple Example
 
-You can generate a simple input for debugging purposes. `LLGenerator.GenerateSimpleInput()` returns a head Node of a linked list that represents the following values: [3, 4, 6, 1, 7, 2]. For this simple example, your output should be 11, as the twins 4 and 7 have the greatest sum. You may also pass your own `int[]` into LLGenerator.GenerateSimpleInput()` and it will generate a linked list with corresponding values so you can test some homemade cases.
+You can generate a simple input for debugging purposes. `LLGenerator.GenerateSimpleInput()` returns a head Node of a linked list that represents the following values: [3, 4, 6, 1, 7, 2]. For this simple example, your output should be 11, as the twins 4 and 7 have the greatest sum. You may also pass your own `int[]` into `LLGenerator.GenerateSimpleInput()` and it will generate a linked list with corresponding values so you can test some homemade cases.
 
 ## To Participate:
 

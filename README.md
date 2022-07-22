@@ -7,7 +7,7 @@ For this exercise, twin nodes are defined as those which are equidistant from th
 
 The linked list you will be using comprises nodes of this class:
 
-```
+```csharp
 internal class Node
 {
     public int Val { get; set; }

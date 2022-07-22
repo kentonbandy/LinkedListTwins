@@ -37,7 +37,7 @@ You can generate a simple input for debugging purposes. `LLGenerator.GenerateSim
 
 ## To Participate:
 
-- Pull down this repo and create a branch.
+- Fork this repository.
 - Create a class with a unique name in the `Solutions` folder in this project and write a static method for your solution that takes a `Node` and returns an int.
 - You may refer to class `Kenny` as an example, but I don't recommend you copy his solution.
 - Create a pull request when you're done.

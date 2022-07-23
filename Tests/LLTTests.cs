@@ -16,15 +16,28 @@ namespace Tests
         [TestMethod]
         public void KennySpeedTest()
         {
-            int actual = Kenny.MaxTwinSum1(LLGenerator.LinkedList);
-            Assert.AreEqual(LLGenerator.Answer, actual);
+            int actual = Kenny.MaxTwinSumFast(LLGenerator.LinkedList);
+            int answer = LLGenerator.Answer;
+            Assert.AreEqual(answer, actual);
+            Assert.AreEqual(answer, LLGenerator.Answer);
         }
 
         [TestMethod]
-        public void KennyCodeGolf()
+        public void KennySpeedTest2()
+        {
+            int actual = Kenny.MaxTwinSumFast2(LLGenerator.LinkedList);
+            int answer = LLGenerator.Answer;
+            Assert.AreEqual(answer, actual);
+            Assert.AreEqual(answer, LLGenerator.Answer);
+        }
+
+        [TestMethod]
+        public void KennyCodeGolfTest()
         {
             int actual = Kenny.X(LLGenerator.LinkedList);
-            Assert.AreEqual(LLGenerator.Answer, actual);
+            int answer = LLGenerator.Answer;
+            Assert.AreEqual(answer, actual);
+            Assert.AreEqual(answer, LLGenerator.Answer);
         }
     }
 }

@@ -4,8 +4,8 @@
     {
         public static Node LinkedList { get; private set; }
         public static int Answer { get; set; }
-        private static readonly string IntsFile = "../../../../LinkedListTwins/Files/Ints.txt";
-        private static readonly string AnswerFile = "../../../../LinkedListTwins/Files/Answer.txt";
+        private static readonly string IntsFile = @"C:\Users\Kenny\coding\MayvueCodingClub\LLT\LinkedListTwins\Files\Ints.txt";
+        private static readonly string AnswerFile = @"C:\Users\Kenny\coding\MayvueCodingClub\LLT\LinkedListTwins\Files\Answer.txt";
 
         public static Node GenerateLinkedList()
         {

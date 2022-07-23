@@ -1,6 +1,6 @@
 ﻿namespace LinkedListTwins.Solutions
 {
-    internal static class Kenny
+    public static class Kenny
     {
         // fast
         public static int MaxTwinSum1(Node node)

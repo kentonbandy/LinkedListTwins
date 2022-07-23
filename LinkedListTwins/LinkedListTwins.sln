@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListTwins", "LinkedListTwins.csproj", "{6FAAB6CA-6F52-456E-90C3-DB8161CC4D19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListTwins", "LinkedListTwins.csproj", "{6FAAB6CA-6F52-456E-90C3-DB8161CC4D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{3197E73B-37E1-4C3F-992B-E1B5F71E6A89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6FAAB6CA-6F52-456E-90C3-DB8161CC4D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FAAB6CA-6F52-456E-90C3-DB8161CC4D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FAAB6CA-6F52-456E-90C3-DB8161CC4D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3197E73B-37E1-4C3F-992B-E1B5F71E6A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3197E73B-37E1-4C3F-992B-E1B5F71E6A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3197E73B-37E1-4C3F-992B-E1B5F71E6A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3197E73B-37E1-4C3F-992B-E1B5F71E6A89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

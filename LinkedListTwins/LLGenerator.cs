@@ -1,16 +1,18 @@
 ﻿namespace LinkedListTwins
 {
-    internal static class LLGenerator
+    public static class LLGenerator
     {
+        public static Node LinkedList { get; private set; }
         public static int Answer { get; set; }
-        private static readonly string IntsFile = "../../../Files/Ints.txt";
-        private static readonly string AnswerFile = "../../../Files/Answer.txt";
+        private static readonly string IntsFile = "../../../../LinkedListTwins/Files/Ints.txt";
+        private static readonly string AnswerFile = "../../../../LinkedListTwins/Files/Answer.txt";
 
         public static Node GenerateLinkedList()
         {
             int[] ints = File.ReadAllLines(IntsFile).Select(s => int.Parse(s)).ToArray();
+            LinkedList = BuildLinkedList(ints);
             Answer = int.Parse(File.ReadAllText(AnswerFile));
-            return BuildLinkedList(ints);
+            return LinkedList;
         }
 
         public static Node GenerateSimpleInput(int[]? ints = null)

@@ -38,7 +38,7 @@ You can generate a simple input for debugging purposes. `LLGenerator.GenerateSim
 ## To Participate:
 
 - Fork this repository.
-- Create a public class with a unique name in the `Solutions` folder in this project and write a static method for your solution that takes a `Node` and returns an int.
+- Create a public class with a unique name in the `LinkedListTwins > Solutions` folder in this project and write a static method for your solution that takes a `Node` and returns an int.
 - Create a pull request when you're done.
 - On August 1st 2022 all valid PRs will be merged and everyone's solutions will be benchmarked.
 

@@ -4,9 +4,13 @@ using LinkedListTwins.Solutions;
 
 namespace Tests
 {
+    /// <summary>
+    /// These tests ensure that 1. The methods output the correct answer and 2. The methods don't modify the LLGenerator.Answer property
+    /// </summary>
     [TestClass]
     public class LLTTests
     {
+        // Runs before every test
         [TestInitialize]
         public void Setup()
         {
@@ -14,19 +18,37 @@ namespace Tests
         }
 
         [TestMethod]
-        public void KennySpeedTest()
+        public void EddieSimpleSolution()
         {
-            int actual = Kenny.MaxTwinSumFast(LLGenerator.LinkedList);
             int answer = LLGenerator.Answer;
+            int actual = Eddie.MaxTwinSum(LLGenerator.LinkedList);
             Assert.AreEqual(answer, actual);
             Assert.AreEqual(answer, LLGenerator.Answer);
         }
 
         [TestMethod]
-        public void KennySpeedTest2()
+        public void KennyList()
         {
-            int actual = Kenny.MaxTwinSumFast2(LLGenerator.LinkedList);
             int answer = LLGenerator.Answer;
+            int actual = Kenny.MaxTwinSumList(LLGenerator.LinkedList);
+            Assert.AreEqual(answer, actual);
+            Assert.AreEqual(answer, LLGenerator.Answer);
+        }
+
+        [TestMethod]
+        public void KennyStack()
+        {
+            int answer = LLGenerator.Answer;
+            int actual = Kenny.MaxTwinSumStack(LLGenerator.LinkedList);
+            Assert.AreEqual(answer, actual);
+            Assert.AreEqual(answer, LLGenerator.Answer);
+        }
+
+        [TestMethod]
+        public void KennyNode()
+        {
+            int answer = LLGenerator.Answer;
+            int actual = Kenny.MaxTwinSumNode(LLGenerator.LinkedList);
             Assert.AreEqual(answer, actual);
             Assert.AreEqual(answer, LLGenerator.Answer);
         }
@@ -34,8 +56,17 @@ namespace Tests
         [TestMethod]
         public void KennyCodeGolfTest()
         {
-            int actual = Kenny.X(LLGenerator.LinkedList);
             int answer = LLGenerator.Answer;
+            int actual = Kenny.X(LLGenerator.LinkedList);
+            Assert.AreEqual(answer, actual);
+            Assert.AreEqual(answer, LLGenerator.Answer);
+        }
+
+        [TestMethod]
+        public void MikeFirstSolution()
+        {
+            int answer = LLGenerator.Answer;
+            int actual = Mike.MaxTwinSum(LLGenerator.LinkedList);
             Assert.AreEqual(answer, actual);
             Assert.AreEqual(answer, LLGenerator.Answer);
         }

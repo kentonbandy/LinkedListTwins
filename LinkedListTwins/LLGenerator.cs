@@ -4,14 +4,16 @@
     {
         public static Node LinkedList { get; private set; }
         public static int Answer { get; set; }
-        private static readonly string IntsFile = @"C:\Users\Kenny\coding\MayvueCodingClub\LLT\LinkedListTwins\Files\Ints.txt";
-        private static readonly string AnswerFile = @"C:\Users\Kenny\coding\MayvueCodingClub\LLT\LinkedListTwins\Files\Answer.txt";
+        public static readonly string IntsFile = "../../../../LinkedListTwins/Files/Ints.txt";
+        public static readonly string AnswerFile = "../../../../LinkedListTwins/Files/Answer.txt";
 
-        public static Node GenerateLinkedList()
+        public static Node GenerateLinkedList(string intsFile = null, string answerFile = null)
         {
-            int[] ints = File.ReadAllLines(IntsFile).Select(s => int.Parse(s)).ToArray();
+            if (intsFile == null) intsFile = IntsFile;
+            if (answerFile == null) answerFile = AnswerFile;
+            int[] ints = File.ReadAllLines(intsFile).Select(s => int.Parse(s)).ToArray();
             LinkedList = BuildLinkedList(ints);
-            Answer = int.Parse(File.ReadAllText(AnswerFile));
+            Answer = int.Parse(File.ReadAllText(answerFile));
             return LinkedList;
         }
 

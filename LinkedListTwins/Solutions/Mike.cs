@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LinkedListTwins.Solutions
+﻿namespace LinkedListTwins.Solutions
 {
-    internal static class Mike
+    public static class Mike
     {
         // my very quickly done first pass at this just to get something working
 

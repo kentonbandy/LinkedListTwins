@@ -10,11 +10,5 @@
             Val = val;
             Next = next;
         }
-
-        public Node(Node node)
-        {
-            this.Val = node.Val;
-            this.Next = node.Next;
-        }
     }
 }

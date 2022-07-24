@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LinkedListTwins.Solutions
+﻿namespace LinkedListTwins.Solutions
 {
-    internal static class Eddie
+    public static class Eddie
     {
         public static int MaxTwinSum(Node node)
         {

@@ -27,6 +27,24 @@ namespace Tests
         }
 
         [TestMethod]
+        public void Eddie2Solution()
+        {
+            int answer = LLGenerator.Answer;
+            int actual = Eddie2.MaxTwinSum(LLGenerator.LinkedList);
+            Assert.AreEqual(answer, actual);
+            Assert.AreEqual(answer, LLGenerator.Answer);
+        }
+
+        [TestMethod]
+        public void Eddie3Solution()
+        {
+            int answer = LLGenerator.Answer;
+            int actual = Eddie3.MaxTwinSum(LLGenerator.LinkedList);
+            Assert.AreEqual(answer, actual);
+            Assert.AreEqual(answer, LLGenerator.Answer);
+        }
+
+        [TestMethod]
         public void KennyList()
         {
             int answer = LLGenerator.Answer;

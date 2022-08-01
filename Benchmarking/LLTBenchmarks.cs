@@ -21,6 +21,12 @@ namespace Benchmarking
         public void BenchmarkEddie() => Verify(Eddie.MaxTwinSum);
 
         [Benchmark]
+        public void BenchmarkEddie2() => Verify(Eddie2.MaxTwinSum);
+
+        [Benchmark]
+        public void BenchmarkEddie3() => Verify(Eddie3.MaxTwinSum);
+
+        [Benchmark]
         public void BenchmarkKennyList() => Verify(Kenny.MaxTwinSumList);
 
         [Benchmark]

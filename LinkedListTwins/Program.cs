@@ -5,7 +5,5 @@ using LinkedListTwins.Solutions;
 // Please clean up before you create a PR!
 
 
-Node linkedListHead = LLGenerator.GenerateLinkedList();
-Node simpleExample = LLGenerator.GenerateSimpleInput();
-Console.WriteLine(Kenny.MaxTwinSumList(simpleExample) == 11);
-Console.WriteLine(Kenny.MaxTwinSumList(linkedListHead) == LLGenerator.Answer);
+var intListGen = new IntListGenerator();
+await intListGen.GenerateTextFiles();
